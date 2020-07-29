@@ -1,0 +1,292 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Jul 29 12:37:12 2020
+| Host         : LAPTOP-CH7L8TQ9 running 64-bit major release  (build 9200)
+| Command      : report_drc -file Camera_Demo_drc_routed.rpt -pb Camera_Demo_drc_routed.pb -rpx Camera_Demo_drc_routed.rpx
+| Design       : Camera_Demo
+| Device       : xc7s15ftgb196-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 51
++----------+----------+--------------------------+------------+
+| Rule     | Severity | Description              | Violations |
++----------+----------+--------------------------+------------+
+| BUFC-1   | Warning  | Input Buffer Connections | 1          |
+| PDRC-153 | Warning  | Gated clock check        | 50         |
++----------+----------+--------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+BUFC-1#1 Warning
+Input Buffer Connections  
+Input buffer Camera_IIC_SDA_IOBUF/IBUF (in Camera_IIC_SDA_IOBUF macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/I1 is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/dly_gen.BUFGCTRL_inst_i_1/O, cell MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/dly_gen.BUFGCTRL_inst_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/E[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[48][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[48][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_0[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[47][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[47][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_10[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[41][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[41][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_11[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[33][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[33][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_12[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[31][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[31][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_13[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[30][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[30][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_14[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[23][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[23][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_15[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[22][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[22][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_16[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[29][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[29][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_17[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[21][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[21][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_18[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[27][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[27][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_19[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[19][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[19][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_20[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[26][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[26][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_21[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[18][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[18][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_22[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[25][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[25][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_23[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[17][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[17][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_24[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[46][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[46][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_25[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[44][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[44][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_26[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[28][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[28][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_27[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[15][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[15][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_28[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[14][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[14][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_29[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[13][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[13][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_2[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[42][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[42][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_30[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[12][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[12][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#26 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_31[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[40][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[40][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#27 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_32[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[24][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[24][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#28 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_33[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[11][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[11][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#29 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_34[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[10][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[10][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#30 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_35[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[9][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[9][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#31 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_36[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[8][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[8][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#32 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_37[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[36][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[36][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#33 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_38[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[20][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[20][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#34 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_39[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[7][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[7][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#35 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_3[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[39][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[39][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#36 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_40[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[6][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[6][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#37 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_41[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[5][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[5][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#38 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_42[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[4][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[4][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#39 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_43[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[0][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[0][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#40 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_44[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[32][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[32][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#41 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_45[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[16][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[16][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#42 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_46[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[3][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[3][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#43 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_47[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[2][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[2][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#44 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_48[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[1][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[1][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#45 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_4[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[38][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[38][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#46 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_5[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[45][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[45][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#47 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_6[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[37][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[37][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#48 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_7[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[43][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[43][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#49 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_8[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[35][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[35][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#50 Warning
+Gated clock check  
+Net MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_9[0] is a gated clock net sourced by a combinational pin MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[34][23]_i_1/O, cell MIPI_Trans_Driver/Driver_Bayer_To_RGB0/temp_rgb_data_reg[34][23]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+

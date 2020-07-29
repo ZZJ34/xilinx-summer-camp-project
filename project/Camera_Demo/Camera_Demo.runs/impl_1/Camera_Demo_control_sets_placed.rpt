@@ -1,0 +1,164 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Jul 29 12:36:54 2020
+| Host         : LAPTOP-CH7L8TQ9 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Camera_Demo_control_sets_placed.rpt
+| Design       : Camera_Demo
+| Device       : xc7s15
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    95 |
+| Unused register locations in slices containing registers |   132 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            5 |
+|      4 |            3 |
+|      8 |            2 |
+|     10 |            4 |
+|     14 |            1 |
+|    16+ |           80 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            3340 |          475 |
+| No           | No                    | Yes                    |             306 |           51 |
+| No           | Yes                   | No                     |             258 |           41 |
+| Yes          | No                    | No                     |             288 |           35 |
+| Yes          | No                    | Yes                    |             102 |           21 |
+| Yes          | Yes                   | No                     |             222 |           27 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------------------------------------+------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+----------------+
+|                             Clock Signal                            |                                 Enable Signal                                |                                    Set/Reset Signal                                    | Slice Load Count | Bel Load Count |
++---------------------------------------------------------------------+------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+----------------+
+| ~change/key_0/inst/key_out                                          |                                                                              |                                                                                        |                1 |              2 |
+|  clk_10/inst/clk_out3                                               | RGB_LED_control_0/Driver_SK6805_0/LED_IO_i_1_n_0                             | RGB_LED_control_0/Driver_SK6805_0/Data_Cnt_reg[0]_0                                    |                1 |              2 |
+|  clk_10/inst/clk_out1                                               | MIPI_Camera_IIC/iic_sda_o_i_1_n_0                                            | RGB_LED_control_0/Driver_SK6805_0/Data_Cnt_reg[0]_0                                    |                1 |              2 |
+|  i_clk_IBUF_BUFG                                                    |                                                                              |                                                                                        |                1 |              2 |
+|  MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/pclk              |                                                                              |                                                                                        |                1 |              2 |
+|  MIPI_Trans_Driver/camera_clock/inst/clk_out1                       |                                                                              | Mini_HDMI_Driver/U0/ClockGenInternal.ClockGenX/in0                                     |                1 |              4 |
+|  MIPI_Trans_Driver/camera_clock/inst/clk_out1                       |                                                                              | Mini_HDMI_Driver/U0/ClockGenInternal.ClockGenX/LockLostReset/aRst_int_0                |                1 |              4 |
+|  clk_10/inst/clk_out3                                               |                                                                              | RGB_LED_control_0/Driver_SK6805_0/Data_Cnt_reg[0]_0                                    |                1 |              4 |
+|  MIPI_Trans_Driver/camera_clock/inst/clk_out1                       |                                                                              | Mini_HDMI_Driver/U0/ClockGenInternal.ClockGenX/LockLostReset/SyncAsyncx/oSyncStages[1] |                1 |              8 |
+|  MIPI_Trans_Driver/camera_clock/inst/clk_out1                       | MIPI_Trans_Driver/Driver_Csi_To_Dvp0/vid_active_video_o0                     | MIPI_Trans_Driver/Driver_Csi_To_Dvp0/unpack_cnt                                        |                1 |              8 |
+|  clk_10/inst/clk_out2                                               | MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/curr_delay                  |                                                                                        |                2 |             10 |
+|  clk_10/inst/clk_out2                                               | MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/start_dly_1                 |                                                                                        |                1 |             10 |
+|  clk_10/inst/clk_out2                                               | MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/sum_dly                     |                                                                                        |                2 |             10 |
+|  clk_10/inst/clk_out2                                               | MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/end_dly_0                   |                                                                                        |                1 |             10 |
+|  clk_10/inst/clk_out1                                               | MIPI_Camera_Driver/initial_cnt[6]_i_1_n_0                                    | MIPI_Camera_Driver/OV5647/data_o_reg[22]_0                                             |                2 |             14 |
+|  MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/CLK               | MIPI_Trans_Driver/Data_To_Csi/U0/lane_align_inst/data_shift[1]_0             |                                                                                        |                4 |             16 |
+|  MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/CLK               | MIPI_Trans_Driver/Data_To_Csi/U0/lane_align_inst/to_cnt[1]_1                 | MIPI_Trans_Driver/Data_To_Csi/U0/lane_align_inst/p_5_out[1]                            |                2 |             16 |
+|  MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/CLK               | MIPI_Trans_Driver/Data_To_Csi/U0/lane_align_inst/to_cnt[0]_2                 | MIPI_Trans_Driver/Data_To_Csi/U0/lane_align_inst/p_5_out[0]                            |                2 |             16 |
+|  MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/CLK               | MIPI_Trans_Driver/Data_To_Csi/U0/parser_inst/packet_size[15]_i_1_n_0         |                                                                                        |                1 |             16 |
+|  clk_10/inst/clk_out3                                               | RGB_LED_control_0/Driver_SK6805_0/Data_Cnt[8]_i_1_n_0                        | RGB_LED_control_0/Driver_SK6805_0/Data_Cnt_reg[0]_0                                    |                3 |             18 |
+|  MIPI_Trans_Driver/camera_clock/inst/clk_out1                       |                                                                              | Mini_HDMI_Driver/U0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0              |                3 |             20 |
+|  clk_10/inst/clk_out3                                               | RGB_LED_control_0/Driver_SK6805_0/Send_Cnt[9]_i_1_n_0                        | RGB_LED_control_0/Driver_SK6805_0/Data_Cnt_reg[0]_0                                    |                5 |             20 |
+|  MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/CLK               | MIPI_Trans_Driver/Driver_Csi_To_Dvp0/axis_tvalid_i_reg_n_0_[0]               | MIPI_Trans_Driver/Driver_Csi_To_Dvp0/flg_down_valid                                    |                2 |             20 |
+|  MIPI_Trans_Driver/camera_clock/inst/clk_out1                       | MIPI_Trans_Driver/Driver_Csi_To_Dvp0/vdata                                   | MIPI_Trans_Driver/Driver_Csi_To_Dvp0/vdata[9]_i_1_n_0                                  |                2 |             20 |
+|  MIPI_Trans_Driver/camera_clock/inst/clk_out1                       |                                                                              | MIPI_Trans_Driver/Driver_Csi_To_Dvp0/flg_rise_frame                                    |                3 |             22 |
+|  MIPI_Trans_Driver/camera_clock/inst/clk_out1                       | MIPI_Trans_Driver/Driver_Csi_To_Dvp0/vid_active_video_o0                     | MIPI_Trans_Driver/Driver_Csi_To_Dvp0/addrb_0                                           |                3 |             22 |
+|  MIPI_Trans_Driver/camera_clock/inst/clk_out1                       | MIPI_Trans_Driver/Driver_Bayer_To_RGB0/sel                                   | MIPI_Trans_Driver/Driver_Bayer_To_RGB0/addr_bram[10]_i_1_n_0                           |                2 |             22 |
+|  clk_10/inst/clk_out2                                               |                                                                              |                                                                                        |                6 |             26 |
+|  clk_10/inst/clk_out2                                               | MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/wait_cnt                    | MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/dly_gen.wait_cnt[12]_i_1_n_0          |                4 |             26 |
+|  MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/CLK               | MIPI_Trans_Driver/Data_To_Csi/U0/parser_inst/packet_size[7]_i_1_n_0          |                                                                                        |                3 |             32 |
+|  MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/CLK               | MIPI_Trans_Driver/Data_To_Csi/U0/parser_inst/transfer_cnt[15]_i_2_n_0        | MIPI_Trans_Driver/Data_To_Csi/U0/parser_inst/transfer_cnt[15]_i_1_n_0                  |                4 |             32 |
+| ~MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/CLK               |                                                                              |                                                                                        |                3 |             34 |
+|  clk_10/inst/clk_out2                                               | MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/dly_gen.acc_val[0]_i_1_n_0  | MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/dly_gen.acc_cnt[19]_i_1_n_0           |                5 |             40 |
+|  clk_10/inst/clk_out2                                               | MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/dly_gen.acc_cnt[19]_i_1_n_0 |                                                                                        |                5 |             40 |
+|  clk_10/inst/clk_out2                                               |                                                                              | MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/dly_gen.acc_cnt[19]_i_1_n_0           |                6 |             40 |
+|  clk_10/inst/clk_out1                                               | MIPI_Camera_Driver/flg_data_ok_i_1_n_0                                       | MIPI_Camera_Driver/OV5647/data_o_reg[22]_0                                             |                9 |             46 |
+|  clk_11/inst/Clk                                                    |                                                                              |                                                                                        |                7 |             46 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_31[0] |                                                                              |                                                                                        |                6 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_37[0] |                                                                              |                                                                                        |                6 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_4[0]  |                                                                              |                                                                                        |                6 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_40[0] |                                                                              |                                                                                        |                6 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_19[0] |                                                                              |                                                                                        |                7 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_15[0] |                                                                              |                                                                                        |                7 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_23[0] |                                                                              |                                                                                        |                7 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_20[0] |                                                                              |                                                                                        |                7 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_29[0] |                                                                              |                                                                                        |                7 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_33[0] |                                                                              |                                                                                        |                6 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_35[0] |                                                                              |                                                                                        |                7 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_41[0] |                                                                              |                                                                                        |                6 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_43[0] |                                                                              |                                                                                        |                6 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_47[0] |                                                                              |                                                                                        |                7 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_36[0] |                                                                              |                                                                                        |                6 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_48[0] |                                                                              |                                                                                        |                6 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_5[0]  |                                                                              |                                                                                        |                6 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_6[0]  |                                                                              |                                                                                        |                6 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_7[0]  |                                                                              |                                                                                        |                7 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_16[0] |                                                                              |                                                                                        |                7 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_28[0] |                                                                              |                                                                                        |                7 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_30[0] |                                                                              |                                                                                        |                6 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_38[0] |                                                                              |                                                                                        |                7 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_8[0]  |                                                                              |                                                                                        |                7 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_9[0]  |                                                                              |                                                                                        |                8 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_18[0] |                                                                              |                                                                                        |                7 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_12[0] |                                                                              |                                                                                        |                6 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_13[0] |                                                                              |                                                                                        |                6 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_25[0] |                                                                              |                                                                                        |                7 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_26[0] |                                                                              |                                                                                        |                6 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_21[0] |                                                                              |                                                                                        |                6 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_3[0]  |                                                                              |                                                                                        |                8 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_44[0] |                                                                              |                                                                                        |                8 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_2[0]  |                                                                              |                                                                                        |                6 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_11[0] |                                                                              |                                                                                        |                8 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_10[0] |                                                                              |                                                                                        |                6 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_42[0] |                                                                              |                                                                                        |                8 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_46[0] |                                                                              |                                                                                        |                7 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_34[0] |                                                                              |                                                                                        |                6 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_32[0] |                                                                              |                                                                                        |                6 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_14[0] |                                                                              |                                                                                        |                6 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_39[0] |                                                                              |                                                                                        |                7 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_45[0] |                                                                              |                                                                                        |                7 |             48 |
+|  MIPI_Trans_Driver/camera_clock/inst/clk_out1                       | MIPI_Trans_Driver/Driver_Bayer_To_RGB0/rgb_data_g[9]_i_1_n_0                 |                                                                                        |                5 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/E[0]                        |                                                                              |                                                                                        |                7 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_17[0] |                                                                              |                                                                                        |                6 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_22[0] |                                                                              |                                                                                        |                7 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_0[0]  |                                                                              |                                                                                        |                7 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_24[0] |                                                                              |                                                                                        |                7 |             48 |
+|  MIPI_Trans_Driver/Driver_Bayer_To_RGB0/o_led_rgb_data_reg[0]_27[0] |                                                                              |                                                                                        |                7 |             48 |
+| ~change/key_0/inst/key_out                                          |                                                                              | change/status_i_1_n_0                                                                  |                7 |             48 |
+|  clk_10/inst/clk_out1                                               |                                                                              | RGB_LED_control_0/Driver_SK6805_0/Data_Cnt_reg[0]_0                                    |               12 |             50 |
+|  MIPI_Trans_Driver/camera_clock/inst/clk_out1                       |                                                                              | Mini_HDMI_Driver/U0/DataEncoders[0].DataEncoder/SR[0]                                  |               14 |             64 |
+|  i_clk_IBUF_BUFG                                                    |                                                                              | clk_11/inst/Count[0]_i_1_n_0                                                           |                8 |             64 |
+|  MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/CLK               | MIPI_Trans_Driver/Data_Read/U0/dl0_rxvalidhs                                 |                                                                                        |               11 |             96 |
+|  clk_10/inst/clk_out1                                               |                                                                              | MIPI_Camera_Driver/OV5647/data_o_reg[22]_0                                             |               35 |            236 |
+|  MIPI_Trans_Driver/Data_Read/U0/clock_system_inst/CLK               |                                                                              |                                                                                        |               40 |            280 |
+|  MIPI_Trans_Driver/camera_clock/inst/clk_out1                       |                                                                              |                                                                                        |               99 |            662 |
++---------------------------------------------------------------------+------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+----------------+
+
+

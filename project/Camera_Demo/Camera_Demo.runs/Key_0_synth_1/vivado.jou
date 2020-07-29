@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Jul 29 09:49:26 2020
+# Process ID: 33104
+# Current directory: D:/xilinx/xilinx-summer-camp-project/project/Camera_Demo/Camera_Demo.runs/Key_0_synth_1
+# Command line: vivado.exe -log Key_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Key_0.tcl
+# Log file: D:/xilinx/xilinx-summer-camp-project/project/Camera_Demo/Camera_Demo.runs/Key_0_synth_1/Key_0.vds
+# Journal file: D:/xilinx/xilinx-summer-camp-project/project/Camera_Demo/Camera_Demo.runs/Key_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Key_0.tcl -notrace

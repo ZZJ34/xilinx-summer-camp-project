@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7s15ftgb196-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -45,7 +44,9 @@ read_verilog -library xil_defaultlib {
   D:/xilinx/xilinx-summer-camp-project/project/Camera_Demo/Camera_Demo.srcs/sources_1/new/Driver_IIC.v
   D:/xilinx/xilinx-summer-camp-project/project/Camera_Demo/Camera_Demo.srcs/sources_1/new/Driver_MIPI.v
   D:/xilinx/xilinx-summer-camp-project/project/Camera_Demo/Camera_Demo.srcs/sources_1/new/Driver_SK6805.v
+  D:/xilinx/xilinx-summer-camp-project/project/Camera_Demo/Camera_Demo.srcs/sources_1/new/HSV_list.v
   D:/xilinx/xilinx-summer-camp-project/project/Camera_Demo/Camera_Demo.srcs/sources_1/new/OV5647_Init.v
+  D:/xilinx/xilinx-summer-camp-project/project/Camera_Demo/Camera_Demo.srcs/sources_1/new/RGB2HSV.v
   D:/xilinx/xilinx-summer-camp-project/project/Camera_Demo/Camera_Demo.srcs/sources_1/new/RGB_LED_control.v
   D:/xilinx/xilinx-summer-camp-project/project/Camera_Demo/Camera_Demo.srcs/sources_1/new/Trigger_Generator.v
   D:/xilinx/xilinx-summer-camp-project/project/Camera_Demo/Camera_Demo.srcs/sources_1/new/change.v
@@ -78,9 +79,9 @@ set_property used_in_implementation false [get_files -all d:/xilinx/xilinx-summe
 read_ip -quiet D:/xilinx/xilinx-summer-camp-project/project/Camera_Demo/Camera_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line.xci
 set_property used_in_implementation false [get_files -all d:/xilinx/xilinx-summer-camp-project/project/Camera_Demo/Camera_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line_ooc.xdc]
 
-read_ip -quiet d:/xilinx/xilinx-summer-camp-project/project/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Key_0/Key_0.xci
+read_ip -quiet D:/xilinx/xilinx-summer-camp-project/project/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Key_0/Key_0.xci
 
-read_ip -quiet d:/xilinx/xilinx-summer-camp-project/project/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci
+read_ip -quiet D:/xilinx/xilinx-summer-camp-project/project/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

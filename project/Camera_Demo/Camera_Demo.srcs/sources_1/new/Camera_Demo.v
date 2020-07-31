@@ -21,13 +21,13 @@
 
 
 module Camera_Demo(
-    // °´¼üÊäÈë
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     input i_key,
-    // È«¾ÖÊ±ÖÓÐÅºÅ 100Mhz
+    // È«ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Åºï¿½ 100Mhz
     input i_clk,
-    // FPGA¸´Î»ÐÅºÅ
+    // FPGAï¿½ï¿½Î»ï¿½Åºï¿½
     input i_rst,
-    // MIPIÉãÏñÍ·
+    // MIPIï¿½ï¿½ï¿½ï¿½Í·
     input i_clk_rx_data_n,
     input i_clk_rx_data_p,
     input [1:0]i_rx_data_n,
@@ -51,13 +51,13 @@ module Camera_Demo(
     reg [10:0]Light_Num=1000;
     reg [30:0]clk_mode=31'd100_000; 
 
-    // Ê±ÖÓÐÅºÅ
+    // Ê±ï¿½ï¿½ï¿½Åºï¿½
     wire clk_100MHz_system;
     wire clk_200MHz;
     wire clk_10Mhz;
     wire clk_1kHz;
     
-    // HDMIÐÅºÅ
+    // HDMIï¿½Åºï¿½
     wire [23:0]rgb_data_src;
     wire rgb_hsync_src;
     wire rgb_vsync_src;
@@ -75,11 +75,11 @@ module Camera_Demo(
     
     wire [23:0] rgb_data;
     
-    // ÏµÍ³Ê±ÖÓ 
+    // ÏµÍ³Ê±ï¿½ï¿½ 
     clk_wiz_0 clk_10(.clk_out1(clk_100MHz_system),.clk_out2(clk_200MHz),.clk_out3(clk_10MHz),.clk_in1(i_clk));
     Clk_Division_0 clk_11(.clk_100MHz(i_clk),.clk_mode(clk_mode),.clk_out(clk_1kHz));
     
-    // HDMIÇý¶¯
+    // HDMIï¿½ï¿½ï¿½ï¿½
     rgb2dvi_0 Mini_HDMI_Driver(
       .TMDS_Clk_p(TMDS_Tx_Clk_P),     // output wire TMDS_Clk_p
       .TMDS_Clk_n(TMDS_Tx_Clk_N),     // output wire TMDS_Clk_n
@@ -93,17 +93,17 @@ module Camera_Demo(
       .PixelClk(o_clk_pixel)
     );
     
-    //Í¼ÏñMIPIÐÅºÅ×ªRGB
+    //Í¼ï¿½ï¿½MIPIï¿½Åºï¿½×ªRGB
     Driver_MIPI MIPI_Trans_Driver(
         .i_clk_200MHz(clk_200MHz),
-        // ÉãÏñÍ·µÄÊäÈë
+        // ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         .i_clk_rx_data_n(i_clk_rx_data_n),
         .i_clk_rx_data_p(i_clk_rx_data_p),
         .i_rx_data_n(i_rx_data_n),
         .i_rx_data_p(i_rx_data_p),
         .i_data_n(i_data_n),
         .i_data_p(i_data_p),
-        // HDMIÊä³ö
+        // HDMIï¿½ï¿½ï¿½
         .o_camera_gpio(o_camera_gpio),
         .o_rgb_data(rgb_data_src),
         .o_rgb_hsync(rgb_hsync_src),
@@ -115,6 +115,7 @@ module Camera_Demo(
     );
 
     change change(
+        .i_clk_100MHz(clk_100MHz_system),
         .i_clk_1kHz(clk_1kHz),
         .i_rgb_data(rgb_data_src),
         .i_rgb_hsync(rgb_hsync_src),
@@ -147,7 +148,7 @@ module Camera_Demo(
         .Light_Ok() 
     );
     
-    //ÉãÏñÍ·IICµÄSDAÏßµÄÈýÌ¬½Úµã
+    //ï¿½ï¿½ï¿½ï¿½Í·IICï¿½ï¿½SDAï¿½ßµï¿½ï¿½ï¿½Ì¬ï¿½Úµï¿½
     wire camera_iic_sda_i;
     wire camera_iic_sda_o;
     wire camera_iic_sda_t;
@@ -159,7 +160,7 @@ module Camera_Demo(
         .O(camera_iic_sda_i),
         .T(~camera_iic_sda_t));
     
-    //ÉãÏñÍ·IICÇý¶¯ÐÅºÅ
+    //ï¿½ï¿½ï¿½ï¿½Í·IICï¿½ï¿½ï¿½ï¿½ï¿½Åºï¿½
     wire iic_busy;
     wire iic_mode;
     wire [7:0]slave_addr;
@@ -171,7 +172,7 @@ module Camera_Demo(
     wire iic_read;
     wire ov5647_ack;
     
-    //ÉãÏñÍ·Çý¶¯
+    //ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½
     OV5647_Init MIPI_Camera_Driver(
         .i_clk(clk_100MHz_system),
         .i_rst(i_rst),
@@ -185,23 +186,23 @@ module Camera_Demo(
         .o_ack(ov5647_ack)                 
     );
     
-    //ÉãÏñÍ·IICÇý¶¯
+    //ï¿½ï¿½ï¿½ï¿½Í·IICï¿½ï¿½ï¿½ï¿½
     Driver_IIC MIPI_Camera_IIC(
         .i_clk(clk_100MHz_system),
         .i_rst(i_rst),
         .i_iic_sda(camera_iic_sda_i),
-        .i_iic_write(iic_write),                //IICÐ´ÐÅºÅ,ÉÏÉýÑØÓÐÐ§
-        .i_iic_read(iic_read),                  //IIC¶ÁÐÅºÅ,ÉÏÉýÑØÓÐÐ§
-        .i_iic_mode(iic_mode),                  //IICÄ£Ê½,1´ú±íË«µØÖ·Î»,0´ú±íµ¥µØÖ·Î»,µÍÎ»µØÖ·ÓÐÐ§
-        .i_slave_addr(slave_addr),              //IIC´Ó»úµØÖ·
-        .i_reg_addr_h(reg_addr_h),              //¼Ä´æÆ÷µØÖ·,¸ß8Î»
-        .i_reg_addr_l(reg_addr_l),              //¼Ä´æÆ÷µØÖ·,µÍ8Î»
-        .i_data_w(data_w),                      //ÐèÒª´«ÊäµÄÊý¾Ý
-        .o_data_r(data_r),                      //IIC¶Áµ½µÄÊý¾Ý
-        .o_iic_busy(iic_busy),                  //IICÃ¦ÐÅºÅ,ÔÚ¹¤×÷Ê±Ã¦,µÍµçÆ½Ã¦
-        .o_iic_scl(o_camera_iic_scl),           //IICÊ±ÖÓÏß
-        .o_sda_dir(camera_iic_sda_t),           //IICÊý¾ÝÏß·½Ïò,1´ú±íÊä³ö
-        .o_iic_sda(camera_iic_sda_o)            //IICÊý¾ÝÏß
+        .i_iic_write(iic_write),                //IICÐ´ï¿½Åºï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§
+        .i_iic_read(iic_read),                  //IICï¿½ï¿½ï¿½Åºï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§
+        .i_iic_mode(iic_mode),                  //IICÄ£Ê½,1ï¿½ï¿½ï¿½ï¿½Ë«ï¿½ï¿½Ö·Î»,0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·Î»,ï¿½ï¿½Î»ï¿½ï¿½Ö·ï¿½ï¿½Ð§
+        .i_slave_addr(slave_addr),              //IICï¿½Ó»ï¿½ï¿½ï¿½Ö·
+        .i_reg_addr_h(reg_addr_h),              //ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½Ö·,ï¿½ï¿½8Î»
+        .i_reg_addr_l(reg_addr_l),              //ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½Ö·,ï¿½ï¿½8Î»
+        .i_data_w(data_w),                      //ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        .o_data_r(data_r),                      //IICï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        .o_iic_busy(iic_busy),                  //IICÃ¦ï¿½Åºï¿½,ï¿½Ú¹ï¿½ï¿½ï¿½Ê±Ã¦,ï¿½Íµï¿½Æ½Ã¦
+        .o_iic_scl(o_camera_iic_scl),           //IICÊ±ï¿½ï¿½ï¿½ï¿½
+        .o_sda_dir(camera_iic_sda_t),           //IICï¿½ï¿½ï¿½ï¿½ï¿½ß·ï¿½ï¿½ï¿½,1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        .o_iic_sda(camera_iic_sda_o)            //IICï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     );
     
 endmodule

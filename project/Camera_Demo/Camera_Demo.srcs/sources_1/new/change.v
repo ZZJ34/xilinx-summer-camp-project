@@ -21,6 +21,7 @@
 
 
 module change(
+    input i_clk_100MHz,
     input i_clk_1kHz,
     input [23:0] i_rgb_data,
     input i_rgb_hsync,
@@ -36,7 +37,7 @@ module change(
     output o_rgb_vde,
     output o_clk_pixel,
     output o_green_led,
-    output reg[23:0] o_led_rgb_data = 0
+    output reg [23:0] o_led_rgb_data
     );
 
 
@@ -46,7 +47,9 @@ module change(
     assign o_rgb_hsync = i_rgb_hsync;
 
     reg  [23:0] temp_rgb_data [48:0];
-    wire [31:0] rgb_data_sum;
+    wire [8:0]  hsv_h_out;
+    wire [23:0] rgb_data_avg;
+    wire [23:0] rgb_data_out;
     wire i_key_stable;
 
     Key_0 key_0(.clk_1kHz(i_clk_1kHz),.rst(1),.key_in(i_key),.key_out(i_key_stable));
@@ -64,7 +67,7 @@ module change(
         else o_rgb_data = i_rgb_data;
     end
 
-    assign  rgb_data_sum = temp_rgb_data[0] + temp_rgb_data[1] + temp_rgb_data[2] + temp_rgb_data[3] + temp_rgb_data[4] + 
+    assign  rgb_data_avg = (temp_rgb_data[0] + temp_rgb_data[1] + temp_rgb_data[2] + temp_rgb_data[3] + temp_rgb_data[4] + 
                            temp_rgb_data[5] + temp_rgb_data[6] + temp_rgb_data[7] + temp_rgb_data[8] + temp_rgb_data[9] + 
                            temp_rgb_data[10] + temp_rgb_data[11] + temp_rgb_data[12] + temp_rgb_data[13] + temp_rgb_data[14] +
                            temp_rgb_data[15] + temp_rgb_data[16] + temp_rgb_data[17] + temp_rgb_data[18] + temp_rgb_data[19] +
@@ -73,19 +76,18 @@ module change(
                            temp_rgb_data[30] + temp_rgb_data[31] + temp_rgb_data[32] + temp_rgb_data[33] + temp_rgb_data[34] +
                            temp_rgb_data[35] + temp_rgb_data[36] + temp_rgb_data[37] + temp_rgb_data[38] + temp_rgb_data[39] +
                            temp_rgb_data[40] + temp_rgb_data[41] + temp_rgb_data[42] + temp_rgb_data[43] + temp_rgb_data[44] +
-                           temp_rgb_data[45] + temp_rgb_data[46] + temp_rgb_data[47] + temp_rgb_data[48];
+                           temp_rgb_data[45] + temp_rgb_data[46] + temp_rgb_data[47] + temp_rgb_data[48])/49;
                        
-                    
- 
+                
+    RGB2HSV RGB2HSV_0(.clk(i_clk_100MHz),.rst(1), .RGB_Data_R(rgb_data_avg[23:16]), .RGB_Data_G(rgb_data_avg[15:8]), .RGB_Data_B(rgb_data_avg[7:0]), .HSV_H(hsv_h_out), .HSV_S(), .HSV_V(), .Delay_Num() );
+    HSV_list HSV_list_0(.HSV_H(hsv_h_out), .RGB_data(rgb_data_out));
     
-    
-    
-    // 状态切换
+    // 状�?�切�?
     reg status = 0;
     always @(negedge i_key_stable) begin
         status <= ~status;
         if (status) begin
-            o_led_rgb_data <= rgb_data_sum/49;
+            o_led_rgb_data <= rgb_data_out;
         end else begin
             o_led_rgb_data <= 24'h00_00_00;
         end

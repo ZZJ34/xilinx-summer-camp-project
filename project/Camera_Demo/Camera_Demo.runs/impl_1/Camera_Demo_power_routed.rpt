@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Wed Jul 29 12:37:17 2020
+| Date             : Thu Jul 30 14:58:00 2020
 | Host             : LAPTOP-CH7L8TQ9 running 64-bit major release  (build 9200)
 | Command          : report_power -file Camera_Demo_power_routed.rpt -pb Camera_Demo_power_summary_routed.pb -rpx Camera_Demo_power_routed.rpx
 | Design           : Camera_Demo
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.712        |
+| Total On-Chip Power (W)  | 0.739        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.692        |
+| Dynamic (W)              | 0.718        |
 | Device Static (W)        | 0.020        |
 | Effective TJA (C/W)      | 3.4          |
-| Max Ambient (C)          | 82.6         |
-| Junction Temperature (C) | 27.4         |
+| Max Ambient (C)          | 82.5         |
+| Junction Temperature (C) | 27.5         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,21 +52,22 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.015 |       17 |       --- |             --- |
-| Slice Logic             |     0.099 |     5533 |       --- |             --- |
-|   LUT as Logic          |     0.089 |     1912 |      8000 |           23.90 |
-|   CARRY4                |     0.009 |      318 |      2000 |           15.90 |
-|   Register              |    <0.001 |     2258 |     16000 |           14.11 |
+| Clocks                  |     0.016 |       17 |       --- |             --- |
+| Slice Logic             |     0.110 |     6150 |       --- |             --- |
+|   LUT as Logic          |     0.101 |     2332 |      8000 |           29.15 |
+|   CARRY4                |     0.009 |      378 |      2000 |           18.90 |
+|   Register              |    <0.001 |     2336 |     16000 |           14.60 |
 |   LUT as Shift Register |    <0.001 |       21 |      2400 |            0.88 |
-|   F7/F8 Muxes           |    <0.001 |       20 |      8000 |            0.25 |
-|   Others                |     0.000 |       89 |       --- |             --- |
-| Signals                 |     0.086 |     4900 |       --- |             --- |
+|   F7/F8 Muxes           |    <0.001 |       28 |      8000 |            0.35 |
+|   Others                |     0.000 |       93 |       --- |             --- |
+| Signals                 |     0.099 |     5374 |       --- |             --- |
 | Block RAM               |     0.004 |        2 |        10 |           20.00 |
 | MMCM                    |     0.187 |        2 |         2 |          100.00 |
 | PLL                     |     0.108 |        1 |         2 |           50.00 |
+| DSPs                    |    <0.001 |        1 |        20 |            5.00 |
 | I/O                     |     0.193 |       24 |       100 |           24.00 |
 | Static Power            |     0.020 |          |           |                 |
-| Total                   |     0.712 |          |           |                 |
+| Total                   |     0.739 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -76,7 +77,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.223 |       0.219 |      0.004 |
+| Vccint    |       1.000 |     0.250 |       0.246 |      0.004 |
 | Vccaux    |       1.800 |     0.176 |       0.169 |      0.007 |
 | Vcco33    |       3.300 |     0.052 |       0.051 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -156,7 +157,7 @@ Table of Contents
 +--------------------------------------------------+-----------+
 | Name                                             | Power (W) |
 +--------------------------------------------------+-----------+
-| Camera_Demo                                      |     0.692 |
+| Camera_Demo                                      |     0.718 |
 |   Camera_IIC_SDA_IOBUF                           |    <0.001 |
 |   MIPI_Camera_Driver                             |     0.001 |
 |     OV5647                                       |    <0.001 |
@@ -222,7 +223,9 @@ Table of Contents
 |         SyncAsyncx                               |    <0.001 |
 |   RGB_LED_control_0                              |    <0.001 |
 |     Driver_SK6805_0                              |    <0.001 |
-|   change                                         |     0.170 |
+|   change                                         |     0.197 |
+|     HSV_list_0                                   |     0.002 |
+|     RGB2HSV_0                                    |     0.039 |
 |     key_0                                        |    <0.001 |
 |       inst                                       |    <0.001 |
 |   clk_10                                         |     0.107 |

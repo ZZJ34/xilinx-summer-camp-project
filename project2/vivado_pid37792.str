@@ -1,0 +1,2190 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 37792
+License: Customer
+
+Current time: 	Thu Jul 30 20:23:21 CST 2020
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 200 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	16331
+User home directory: C:/Users/16331
+User working directory: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2018.3
+RDI_DATADIR: D:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: D:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/16331/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/16331/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/16331/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/vivado.log
+Vivado journal file location: 	C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/vivado.jou
+Engine tmp dir: 	C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/.Xil/Vivado-37792-DESKTOP-628HQFE
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2018.3
+XILINX_SDK: D:/Xilinx/SDK/2018.3
+XILINX_VIVADO: D:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 669 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\16331\Documents\GitHub_Projects\A05_v1\RGB_LED_v1\RGB_LED_v1.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 669 MB. GUI used memory: 45 MB. Current time: 7/30/20, 8:23:23 PM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 82 MB (+83443kb) [00:00:11]
+// [Engine Memory]: 701 MB (+583490kb) [00:00:11]
+// [GUI Memory]: 96 MB (+10274kb) [00:00:12]
+// [Engine Memory]: 740 MB (+4459kb) [00:00:14]
+// WARNING: HEventQueue.dispatchEvent() is taking  3377 ms.
+// Tcl Message: open_project C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/MyIP'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'. 
+// [Engine Memory]: 947 MB (+178173kb) [00:00:16]
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 778.625 ; gain = 150.770 
+// Project name: RGB_LED_v1; location: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1; part: xc7s15ftgb196-1
+// [GUI Memory]: 108 MB (+7508kb) [00:00:17]
+dismissDialog("Open Project"); // bx (cp)
+// a (cp): Critical Messages: addNotify
+// [Engine Memory]: 1,011 MB (+17110kb) [00:00:18]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 12 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Jul 30 20:23:47 2020] Launched synth_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/synth_1/runme.log [Thu Jul 30 20:23:47 2020] Launched impl_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemTop (SystemTop.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemTop (SystemTop.v), clk_out_100_200 : clk_wiz_0 (clk_wiz_0.xci)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,050 MB. GUI used memory: 57 MB. Current time: 7/30/20, 8:23:53 PM CST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 116 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// [GUI Memory]: 116 MB (+3022kb) [00:02:34]
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// bx (cp):  Auto Connect : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  3448 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,732 MB. GUI used memory: 63 MB. Current time: 7/30/20, 8:25:55 PM CST
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/SystemTop.bit} [get_hw_devices xc7s15_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 1,733 MB (+703643kb) [00:02:43]
+dismissDialog("Auto Connect"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/SystemTop.bit} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7s15_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 70 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // X (q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_FILESET_WINDOW, "Sources"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_FILESET_WINDOW
+// RDIResource.RDIViews_PROPERTIES: Hardware Device Properties: close view
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemTop (SystemTop.v), color_judge_HSV : Color_Rec (Color_Rec.v)]", 6, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemTop (SystemTop.v), color_judge_HSV : Color_Rec (Color_Rec.v)]", 6, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 17 seconds
+selectCodeEditor("Color_Rec.v", 288, 263); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("Color_Rec.v", 215, 106); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 317, 238); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 290, 219); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 157, 242); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 247, 225); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("Color_Rec.v", 169, 179); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("Color_Rec.v", 127, 39); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 127, 39); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,784 MB. GUI used memory: 64 MB. Current time: 7/30/20, 8:28:43 PM CST
+// Elapsed time: 25 seconds
+selectCodeEditor("Color_Rec.v", 397, 305); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Jul 30 20:29:20 2020] Launched synth_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/synth_1/runme.log [Thu Jul 30 20:29:20 2020] Launched impl_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 122 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/SystemTop.bit} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7s15_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 41 seconds
+selectCodeEditor("Color_Rec.v", 111, 292); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 111, 292, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Color_Rec.v", 111, 285); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 111, 285, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Color_Rec.v", 61, 240); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("Color_Rec.v", 122, 244); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("Color_Rec.v", 272, 308); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 277, 286); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Color_Rec.v", 118, 174); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 118, 174, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Color_Rec.v", 122, 173); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 122, 173, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("Color_Rec.v", 402, 317); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 161, 174); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 161, 174, false, false, false, false, true); // cl (w, cp) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Jul 30 20:33:12 2020] Launched synth_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/synth_1/runme.log [Thu Jul 30 20:33:12 2020] Launched impl_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/runme.log 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// n (cp): Close Hardware Target: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 154 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/SystemTop.bit} [get_hw_devices xc7s15_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 79 seconds
+selectCodeEditor("Color_Rec.v", 141, 148); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 141, 148, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 54 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/SystemTop.bit} [get_hw_devices xc7s15_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1154 ms. Increasing delay to 3000 ms.
+// [GUI Memory]: 123 MB (+659kb) [00:16:46]
+// Elapsed time: 96 seconds
+selectCodeEditor("Color_Rec.v", 366, 304); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // q (ak, bC)
+setFileChooser("C:/Users/16331/Documents/GitHub_Projects/Camera_Demo.bit");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/16331/Documents/GitHub_Projects/Camera_Demo.bit} [get_hw_devices xc7s15_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 11 seconds
+dismissDialog("Program Device"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// n (cp): Close Hardware Target: addNotify
+// Elapsed time: 164 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// n (cp): Close Hardware Target: addNotify
+// Elapsed time: 69 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// n (cp): Close Hardware Target: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,794 MB. GUI used memory: 67 MB. Current time: 7/30/20, 8:58:45 PM CST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 1841 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // q (ak, bC)
+setFileChooser("C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/SystemTop.bit");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/SystemTop.bit} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7s15_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 12 seconds
+dismissDialog("Program Device"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// n (cp): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,794 MB. GUI used memory: 62 MB. Current time: 7/30/20, 9:28:46 PM CST
+// Elapsed time: 810 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (Q, cp)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (Q, cp)
+// bx (cp):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7s15ftgb196-1 Top: SystemTop 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2216 ms. Increasing delay to 4000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 562ms to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,145 MB. GUI used memory: 62 MB. Current time: 7/30/20, 9:29:06 PM CST
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,145 MB. GUI used memory: 62 MB. Current time: 7/30/20, 9:29:18 PM CST
+// [Engine Memory]: 2,145 MB (+341902kb) [01:06:05]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Xgd.load filename: D:/Xilinx/Vivado/2018.3/data/parts/xilinx/spartan7/devint/spartan7/xc7s15/xc7s15.xgd; ZipEntry: xc7s15_detail.xgd elapsed time: 0.5s
+// [GUI Memory]: 134 MB (+5909kb) [01:06:07]
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2643 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1953.473 ; gain = 65.750 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'csi_to_axis_0' [C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/.Xil/Vivado-37792-DESKTOP-628HQFE/realtime/csi_to_axis_0_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'csi_to_axis_0' (5#1) [C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/.Xil/Vivado-37792-DESKTOP-628HQFE/realtime/csi_to_axis_0_stub.v:6] INFO: [Synth 8-6157] synthesizing module 'Driver_Csi_To_Dvp' [C:/Users/16331/Desktop/xilinx_summer/Camera_Demo/Camera_Demo.srcs/sources_1/new/Driver_Csi_To_Dvp.v:23] 
+// Tcl Message: 	Parameter Default_AXIS_TREADY bound to: 1'b1  	Parameter WIDTH bound to: 12 - type: integer  	Parameter HSIZE bound to: 1280 - type: integer  	Parameter HFP bound to: 1390 - type: integer  	Parameter HSP bound to: 1430 - type: integer  	Parameter HMAX bound to: 1650 - type: integer  	Parameter VSIZE bound to: 720 - type: integer  	Parameter VFP bound to: 725 - type: integer  	Parameter VSP bound to: 730 - type: integer  	Parameter VMAX bound to: 750 - type: integer  	Parameter HSPP bound to: 0 - type: integer  	Parameter VSPP bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'AXIS_Data_RAM' [C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/.Xil/Vivado-37792-DESKTOP-628HQFE/realtime/AXIS_Data_RAM_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'AXIS_Data_RAM' (6#1) [C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/.Xil/Vivado-37792-DESKTOP-628HQFE/realtime/AXIS_Data_RAM_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'Driver_Csi_To_Dvp' (7#1) [C:/Users/16331/Desktop/xilinx_summer/Camera_Demo/Camera_Demo.srcs/sources_1/new/Driver_Csi_To_Dvp.v:23] INFO: [Synth 8-6157] synthesizing module 'Driver_Bayer_To_RGB' [C:/Users/16331/Desktop/xilinx_summer/Camera_Demo/Camera_Demo.srcs/sources_1/new/Driver_Bayer_To_RGB.v:23] 
+// Tcl Message: 	Parameter RGB2HSV_Delay_Clk bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'RGB2HSV' (11#1) [C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.srcs/sources_1/new/RGB2HSV.v:23] INFO: [Synth 8-6157] synthesizing module 'Color_Rec' [C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.srcs/sources_1/new/Color_Rec.v:23] 
+// Tcl Message: 	Parameter black bound to: 0 - type: integer  	Parameter white bound to: 1 - type: integer  	Parameter red bound to: 2 - type: integer  	Parameter yellow bound to: 3 - type: integer  	Parameter green bound to: 4 - type: integer  	Parameter blue bound to: 5 - type: integer  	Parameter H_pixel bound to: 1280 - type: integer  	Parameter V_pixel bound to: 720 - type: integer  	Parameter x_min bound to: 480 - type: integer  	Parameter x_max bound to: 800 - type: integer  	Parameter y_min bound to: 270 - type: integer  	Parameter y_max bound to: 450 - type: integer  
+// Tcl Message: 	Parameter Period_Send bound to: 12 - type: integer  	Parameter Division_Factor bound to: 1000 - type: integer  	Parameter RGB_All_Bit bound to: 48 - type: integer  	Parameter CODE_High_0 bound to: 3 - type: integer  	Parameter CODE_High_1 bound to: 9 - type: integer  
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.srcs/sources_1/new/Driver_SK6805.v:72] INFO: [Synth 8-6155] done synthesizing module 'Driver_SK6805' (15#1) [C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.srcs/sources_1/new/Driver_SK6805.v:8] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'RGB_LED_control' (16#1) [C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.srcs/sources_1/new/RGB_LED_control.v:1] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'RGB_Light' (17#1) [C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.srcs/sources_1/new/RGB_Light.v:23] INFO: [Synth 8-6157] synthesizing module 'IOBUF' [D:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615] 
+// Tcl Message: 	Parameter DRIVE bound to: 12 - type: integer  	Parameter IBUF_LOW_PWR bound to: TRUE - type: string  	Parameter IOSTANDARD bound to: DEFAULT - type: string  	Parameter SLEW bound to: SLOW - type: string  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (18#1) [D:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615] INFO: [Synth 8-6157] synthesizing module 'OV5647_Init' [C:/Users/16331/Desktop/xilinx_summer/Camera_Demo/Camera_Demo.srcs/sources_1/new/OV5647_Init.v:23] 
+// Tcl Message: 	Parameter SLAVE_ADDRESS bound to: 8'b01101100  	Parameter INITIAL_NUM bound to: 8'b01011000  	Parameter REG_ADDR2_EN bound to: 1'b1  	Parameter WR_HOLD_T bound to: 4'b1010  	Parameter WR_VALID bound to: 1'b1  	Parameter WAIT_DELAY bound to: 20'b00011000011010100000  	Parameter IDLE bound to: 2'b00  	Parameter START bound to: 2'b01  	Parameter WAIT bound to: 2'b10  	Parameter END bound to: 2'b11  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ROM_OV5647' [C:/Users/16331/Desktop/xilinx_summer/Camera_Demo/Camera_Demo.srcs/sources_1/new/OV5647_Init.v:243] INFO: [Synth 8-6155] done synthesizing module 'ROM_OV5647' (19#1) [C:/Users/16331/Desktop/xilinx_summer/Camera_Demo/Camera_Demo.srcs/sources_1/new/OV5647_Init.v:243] INFO: [Synth 8-6157] synthesizing module 'Trigger_Generator' [C:/Users/16331/Desktop/xilinx_summer/Camera_Demo/Camera_Demo.srcs/sources_1/new/Trigger_Generator.v:23] 
+// Tcl Message: 	Parameter ST_WAIT bound to: 2'b00  	Parameter ST_START bound to: 2'b01  	Parameter ST_HOLD bound to: 2'b10  	Parameter ST_END bound to: 2'b11  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'Trigger_Generator' (20#1) [C:/Users/16331/Desktop/xilinx_summer/Camera_Demo/Camera_Demo.srcs/sources_1/new/Trigger_Generator.v:23] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'OV5647_Init' (21#1) [C:/Users/16331/Desktop/xilinx_summer/Camera_Demo/Camera_Demo.srcs/sources_1/new/OV5647_Init.v:23] INFO: [Synth 8-6157] synthesizing module 'Driver_IIC' [C:/Users/16331/Desktop/xilinx_summer/Camera_Demo/Camera_Demo.srcs/sources_1/new/Driver_IIC.v:22] 
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/16331/Desktop/xilinx_summer/Camera_Demo/Camera_Demo.srcs/sources_1/new/Driver_IIC.v:388] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'Driver_IIC' (22#1) [C:/Users/16331/Desktop/xilinx_summer/Camera_Demo/Camera_Demo.srcs/sources_1/new/Driver_IIC.v:22] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'SystemTop' (23#1) [C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.srcs/sources_1/new/SystemTop.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1994.844 ; gain = 107.121 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1994.844 ; gain = 107.121 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1994.844 ; gain = 107.121 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Opt 31-140] Inserted 4 IBUFs to IO ports without IO buffers. INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers. 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SystemTop_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/SystemTop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SystemTop_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/SystemTop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. INFO: [Timing 38-2] Deriving generated clocks 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2314.465 ; gain = 0.000 
+// Tcl Message: Parsing XDC File [C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.srcs/constrs_1/new/system.xdc] Finished Parsing XDC File [C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.srcs/constrs_1/new/system.xdc] 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.srcs/constrs_1/new/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SystemTop_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/SystemTop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. INFO: [Timing 38-2] Deriving generated clocks 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2314.480 ; gain = 0.000 
+// Tcl Message: Parsing XDC File [c:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'Mini_HDMI_Driver/U0' Finished Parsing XDC File [c:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'Mini_HDMI_Driver/U0' Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2314.508 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 1 instances were transformed.   IOBUF => IOBUF (IBUF, OBUFT): 1 instances  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:23 . Memory (MB): peak = 2375.746 ; gain = 488.023 
+// Tcl Message: 71 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:23 . Memory (MB): peak = 2375.746 ; gain = 488.023 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Elapsed time: 24 seconds
+dismissDialog("Open Elaborated Design"); // bx (cp)
+// [GUI Memory]: 143 MB (+1449kb) [01:06:54]
+// Elapsed time: 48 seconds
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// n (cp): Close Hardware Target: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 2,198 MB. GUI used memory: 82 MB. Current time: 7/30/20, 9:59:21 PM CST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  1735 ms.
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,198 MB. GUI used memory: 80 MB. Current time: 7/30/20, 10:44:40 PM CST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 4500 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+// Elapsed time: 473 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Rec.v", 3); // k (j, cp)
+// Elapsed time: 55 seconds
+selectCodeEditor("Color_Rec.v", 260, 225); // cl (w, cp)
+// Elapsed time: 122 seconds
+selectCodeEditor("Color_Rec.v", 158, 77); // cl (w, cp)
+// Elapsed time: 52 seconds
+typeControlKey((HResource) null, "Color_Rec.v", 'v'); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("Color_Rec.v", 199, 475); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 290, 220); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 290, 246); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 258, 219); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 377, 218); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("Color_Rec.v", 227, 265); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 280, 308); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 344, 292); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 298, 324); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 382, 301); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 382, 291); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 382, 291, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Color_Rec.v", 289, 264); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 356, 286); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 202, 222); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 256, 219); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("Color_Rec.v", 224, 262); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 342, 311); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 369, 311); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 283, 243); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 196, 266); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 203, 265); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 289, 288); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 292, 288); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 202, 289); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 355, 288); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 410, 286); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 360, 317); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 226, 333); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 344, 358); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 286, 357); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 292, 372); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 296, 358); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 199, 357); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 364, 356); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 430, 360); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 360, 358); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 428, 358); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 225, 404); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 341, 424); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 365, 425); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 287, 429); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 352, 435); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 355, 221); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 416, 219); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 474, 223); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 202, 218); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("Color_Rec.v", 223, 192); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 343, 219); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 289, 237); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 355, 220); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 286, 220); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 293, 258); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 225, 263); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 288, 288); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 345, 286); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 290, 289); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 285, 312); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 335, 294); // cl (w, cp)
+// Elapsed time: 27 seconds
+selectCodeEditor("Color_Rec.v", 278, 481); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Jul 30 23:02:08 2020] Launched synth_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/synth_1/runme.log [Thu Jul 30 23:02:08 2020] Launched impl_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 124 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 25, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 26, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7s15_0"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/SystemTop.bit} [get_hw_devices xc7s15_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 121 seconds
+selectCodeEditor("Color_Rec.v", 313, 271); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 410, 365); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 421, 411); // cl (w, cp)
+// Elapsed time: 40 seconds
+selectCodeEditor("Color_Rec.v", 221, 127); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 247, 131); // cl (w, cp)
+// Elapsed time: 43 seconds
+selectCodeEditor("Color_Rec.v", 455, 233); // cl (w, cp)
+// Elapsed time: 112 seconds
+selectCodeEditor("Color_Rec.v", 358, 199); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 393, 336); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 370, 343); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 377, 401); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("Color_Rec.v", 404, 193); // cl (w, cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Jul 30 23:10:50 2020] Launched synth_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/synth_1/runme.log [Thu Jul 30 23:10:50 2020] Launched impl_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/runme.log 
+// Elapsed time: 20 seconds
+selectCodeEditor("Color_Rec.v", 165, 334); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 161, 334); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 157, 470); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 159, 478); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 158, 401); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 47 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cp)
+// aS (cp): Cancel Implementation: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aS)
+dismissDialog("Cancel Implementation"); // aS (cp)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cp)
+// aS (cp): Cancel Implementation: addNotify
+selectButton(PAResourceQtoS.StateMonitor_RESET_RUN, "Reset Run"); // a (aS)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Cancel Implementation"); // aS (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (cp)
+selectCodeEditor("Color_Rec.v", 31, 193); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 150, 249); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SystemTop.v", 0); // k (j, cp)
+selectCodeEditor("SystemTop.v", 104, 131); // cl (w, cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Jul 30 23:13:19 2020] Launched synth_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/synth_1/runme.log [Thu Jul 30 23:13:19 2020] Launched impl_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Rec.v", 1); // k (j, cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,198 MB. GUI used memory: 83 MB. Current time: 7/30/20, 11:14:43 PM CST
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 135 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/SystemTop.bit} [get_hw_devices xc7s15_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// n (cp): Close Hardware Target: addNotify
+// Elapsed time: 46 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+selectCodeEditor("Color_Rec.v", 247, 177); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("Color_Rec.v", 299, 167); // cl (w, cp)
+// Elapsed time: 81 seconds
+selectCodeEditor("Color_Rec.v", 198, 407); // cl (w, cp)
+// Elapsed time: 43 seconds
+selectCodeEditor("Color_Rec.v", 163, 196); // cl (w, cp)
+// Elapsed time: 31 seconds
+typeControlKey(null, null, 'z');
+selectCodeEditor("Color_Rec.v", 96, 99); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 556, 461); // cl (w, cp)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1283 ms. Increasing delay to 3849 ms.
+selectCodeEditor("Color_Rec.v", 92, 239); // cl (w, cp)
+typeControlKey((HResource) null, "Color_Rec.v", 'c'); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("Color_Rec.v", 448, 345); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 157, 234); // cl (w, cp)
+// Elapsed time: 84 seconds
+selectCodeEditor("Color_Rec.v", 153, 126); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 351, 293); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("Color_Rec.v", 285, 185); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 289, 173); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 257, 432); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("Color_Rec.v", 157, 453); // cl (w, cp)
+typeControlKey((HResource) null, "Color_Rec.v", 'c'); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 280, 140); // cl (w, cp)
+typeControlKey((HResource) null, "Color_Rec.v", 'v'); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 337, 365); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 261, 350); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 156, 348); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 177, 325); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 180, 364); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 169, 333); // cl (w, cp)
+// Elapsed time: 124 seconds
+selectCodeEditor("Color_Rec.v", 135, 90); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("Color_Rec.v", 167, 311); // cl (w, cp)
+typeControlKey((HResource) null, "Color_Rec.v", 'c'); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 169, 103); // cl (w, cp)
+typeControlKey((HResource) null, "Color_Rec.v", 'v'); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 249, 107); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 249, 107, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Color_Rec.v", 383, 101); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 383, 101, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Color_Rec.v", 416, 94); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 214, 156); // cl (w, cp)
+// Elapsed time: 42 seconds
+selectCodeEditor("Color_Rec.v", 115, 89); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 267, 190); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 292, 465); // cl (w, cp)
+// Elapsed time: 31 seconds
+selectCodeEditor("Color_Rec.v", 158, 408); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 159, 190); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 34, 195); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 242, 320); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 157, 332); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 310, 268); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 310, 295); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("Color_Rec.v", 215, 472); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 229, 299); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 201, 280); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 269, 308); // cl (w, cp)
+// Elapsed time: 48 seconds
+selectCodeEditor("Color_Rec.v", 388, 168); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("Color_Rec.v", 231, 219); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("Color_Rec.v", 224, 215); // cl (w, cp)
+typeControlKey((HResource) null, "Color_Rec.v", 'v'); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 340, 211); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 462, 223); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 216, 552); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 217, 544); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 223, 391); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 194, 297); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("Color_Rec.v", 462, 245); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("Color_Rec.v", 248, 238); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 344, 246); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 457, 242); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 270, 291); // cl (w, cp)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "Color_Rec.v", 'v'); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 243, 290); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 333, 291); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 432, 288); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 539, 295); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("Color_Rec.v", 163, 285); // cl (w, cp)
+typeControlKey((HResource) null, "Color_Rec.v", 'c'); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 349, 320); // cl (w, cp)
+typeControlKey((HResource) null, "Color_Rec.v", 'v'); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 194, 335); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 294, 337); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 354, 364); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 312, 356); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 312, 356, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Color_Rec.v", 358, 359); // cl (w, cp)
+typeControlKey((HResource) null, "Color_Rec.v", 'v'); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 293, 387); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 400, 386); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 327, 393); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 319, 407); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 319, 407, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Color_Rec.v", 341, 409); // cl (w, cp)
+// Elapsed time: 29 seconds
+selectCodeEditor("Color_Rec.v", 270, 517); // cl (w, cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 59 seconds
+selectCodeEditor("Color_Rec.v", 241, 336); // cl (w, cp)
+// Elapsed time: 36 seconds
+selectCodeEditor("Color_Rec.v", 210, 196); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 210, 196); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 210, 196); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 210, 196, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Color_Rec.v", 214, 195); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 214, 195, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Color_Rec.v", 408, 337); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 138, 171); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 123, 132); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("Color_Rec.v", 87, 134); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 87, 134, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("Color_Rec.v", 88, 154); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 89, 171); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("Color_Rec.v", 88, 272); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 27, 349); // cl (w, cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Jul 30 23:35:20 2020] Launched synth_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/synth_1/runme.log [Thu Jul 30 23:35:20 2020] Launched impl_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 110 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/SystemTop.bit} [get_hw_devices xc7s15_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 55 seconds
+selectCodeEditor("Color_Rec.v", 319, 247); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 317, 124); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 355, 98); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 367, 87); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("Color_Rec.v", 366, 113); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 257, 84); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 343, 112); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 257, 84); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("Color_Rec.v", 201, 121); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("Color_Rec.v", 194, 179); // cl (w, cp)
+// Elapsed time: 291 seconds
+selectCodeEditor("Color_Rec.v", 190, 154); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 352, 152); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,198 MB. GUI used memory: 83 MB. Current time: 7/30/20, 11:44:43 PM CST
+// Elapsed time: 14 seconds
+selectCodeEditor("Color_Rec.v", 366, 334); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 368, 319); // cl (w, cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Jul 30 23:45:02 2020] Launched synth_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/synth_1/runme.log [Thu Jul 30 23:45:02 2020] Launched impl_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 141 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/SystemTop.bit} [get_hw_devices xc7s15_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 39 seconds
+selectCodeEditor("Color_Rec.v", 298, 315); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 371, 343); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 386, 325); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 271, 320); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 197, 337); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 159, 288); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 199, 286); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 339, 456); // cl (w, cp)
+typeControlKey((HResource) null, "Color_Rec.v", 'v'); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 160, 468); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 369, 475); // cl (w, cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Jul 30 23:48:46 2020] Launched synth_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/synth_1/runme.log [Thu Jul 30 23:48:46 2020] Launched impl_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 130 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/SystemTop.bit} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7s15_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 62 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Color_Rec_RGB (Color_Rec_RGB.v)]", 12, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Color_Rec_RGB (Color_Rec_RGB.v)]", 12, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Rec.v", 1); // k (j, cp)
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Rec_RGB.v", 2); // k (j, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("Color_Rec_RGB.v", 98, 262); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Rec.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Rec_RGB.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SystemTop.v", 0); // k (j, cp)
+selectCodeEditor("SystemTop.v", 79, 332); // cl (w, cp)
+selectCodeEditor("SystemTop.v", 105, 290); // cl (w, cp)
+selectCodeEditor("SystemTop.v", 118, 335); // cl (w, cp)
+selectCodeEditor("SystemTop.v", 118, 335, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("SystemTop.v", 83, 335); // cl (w, cp)
+selectCodeEditor("SystemTop.v", 102, 340); // cl (w, cp)
+selectCodeEditor("SystemTop.v", 102, 340, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "SystemTop.v", 'v'); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("SystemTop.v", 102, 312); // cl (w, cp)
+selectCodeEditor("SystemTop.v", 102, 312, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "SystemTop.v", 'c'); // cl (w, cp)
+selectCodeEditor("SystemTop.v", 88, 401); // cl (w, cp)
+typeControlKey((HResource) null, "SystemTop.v", 'v'); // cl (w, cp)
+selectCodeEditor("SystemTop.v", 114, 423); // cl (w, cp)
+selectCodeEditor("SystemTop.v", 114, 423, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "SystemTop.v", 'v'); // cl (w, cp)
+selectCodeEditor("SystemTop.v", 112, 449); // cl (w, cp)
+selectCodeEditor("SystemTop.v", 112, 449, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "SystemTop.v", 'v'); // cl (w, cp)
+selectCodeEditor("SystemTop.v", 139, 427); // cl (w, cp)
+selectCodeEditor("SystemTop.v", 228, 439); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Rec_RGB.v", 2); // k (j, cp)
+selectCodeEditor("Color_Rec_RGB.v", 89, 270); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 89, 292); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 87, 322); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 90, 306); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 119, 267); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Rec.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Rec_RGB.v", 2); // k (j, cp)
+selectCodeEditor("Color_Rec_RGB.v", 29, 291); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 144, 349); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 237, 372); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 140, 362); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 198, 389); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 33, 239); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Rec.v", 1); // k (j, cp)
+selectCodeEditor("Color_Rec.v", 32, 312); // cl (w, cp)
+typeControlKey((HResource) null, "Color_Rec.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Rec_RGB.v", 2); // k (j, cp)
+typeControlKey((HResource) null, "Color_Rec_RGB.v", 'v'); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 112, 243); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SystemTop.v", 0); // k (j, cp)
+selectCodeEditor("SystemTop.v", 127, 383); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Rec_RGB.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SystemTop.v", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Rec_RGB.v", 2); // k (j, cp)
+selectCodeEditor("Color_Rec_RGB.v", 161, 223); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Rec.v", 1); // k (j, cp)
+selectCodeEditor("Color_Rec.v", 157, 355); // cl (w, cp)
+typeControlKey((HResource) null, "Color_Rec.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Rec_RGB.v", 2); // k (j, cp)
+typeControlKey((HResource) null, "Color_Rec_RGB.v", 'v'); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 169, 221); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Rec.v", 1); // k (j, cp)
+selectCodeEditor("Color_Rec.v", 347, 324); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Rec_RGB.v", 2); // k (j, cp)
+selectCodeEditor("Color_Rec_RGB.v", 159, 409); // cl (w, cp)
+typeControlKey((HResource) null, "Color_Rec_RGB.v", 'v'); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 169, 399); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 225, 345); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 206, 332); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 108, 332); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 122, 332); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 220, 497); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 105, 331); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Rec.v", 1); // k (j, cp)
+selectCodeEditor("Color_Rec.v", 97, 126); // cl (w, cp)
+typeControlKey((HResource) null, "Color_Rec.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Rec_RGB.v", 2); // k (j, cp)
+typeControlKey((HResource) null, "Color_Rec_RGB.v", 'v'); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 2, 351); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 156, 418); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 167, 218); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 216, 221); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 168, 372); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 224, 378); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("Color_Rec_RGB.v", 209, 347); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("Color_Rec_RGB.v", 193, 360); // cl (w, cp)
+// Elapsed time: 36 seconds
+selectCodeEditor("Color_Rec_RGB.v", 268, 410); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 230, 404); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("Color_Rec_RGB.v", 279, 468); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 233, 454); // cl (w, cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("Color_Rec_RGB.v", 232, 428); // cl (w, cp)
+// Elapsed time: 47 seconds
+selectCodeEditor("Color_Rec_RGB.v", 398, 426); // cl (w, cp)
+typeControlKey((HResource) null, "Color_Rec_RGB.v", 'c'); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 359, 286); // cl (w, cp)
+typeControlKey((HResource) null, "Color_Rec_RGB.v", 'v'); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 438, 292); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 422, 385); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 384, 335); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 409, 335); // cl (w, cp)
+typeControlKey((HResource) null, "Color_Rec_RGB.v", 'v'); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 409, 335); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 494, 338); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 511, 340); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 395, 375); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 403, 382); // cl (w, cp)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "Color_Rec_RGB.v", 'v'); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 394, 383); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 481, 376); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 492, 458); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 352, 478); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 231, 426); // cl (w, cp)
+typeControlKey((HResource) null, "Color_Rec_RGB.v", 'c'); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 232, 473); // cl (w, cp)
+typeControlKey((HResource) null, "Color_Rec_RGB.v", 'v'); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 291, 472); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SystemTop.v", 0); // k (j, cp)
+selectCodeEditor("SystemTop.v", 262, 357); // cl (w, cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Rec.v", 1); // k (j, cp)
+selectCodeEditor("Color_Rec.v", 302, 119); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SystemTop.v", 0); // k (j, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Jul 31 00:02:22 2020] Launched synth_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/synth_1/runme.log [Fri Jul 31 00:02:22 2020] Launched impl_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 141 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/SystemTop.bit} [get_hw_devices xc7s15_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Rec_RGB.v", 2); // k (j, cp)
+selectCodeEditor("Color_Rec_RGB.v", 381, 311); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 226, 80); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("Color_Rec_RGB.v", 263, 59); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 455, 61); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 265, 57); // cl (w, cp)
+// Elapsed time: 73 seconds
+selectCodeEditor("Color_Rec_RGB.v", 358, 404); // cl (w, cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 40 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Jul 31 00:07:28 2020] Launched synth_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/synth_1/runme.log [Fri Jul 31 00:07:28 2020] Launched impl_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 109 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/SystemTop.bit} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7s15_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 33 seconds
+selectCodeEditor("Color_Rec_RGB.v", 263, 267); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("Color_Rec_RGB.v", 160, 312); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 233, 355); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("Color_Rec_RGB.v", 158, 446); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 376, 455); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 446, 399); // cl (w, cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 152 MB (+2117kb) [03:47:32]
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Jul 31 00:10:45 2020] Launched synth_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/synth_1/runme.log [Fri Jul 31 00:10:45 2020] Launched impl_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 107 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/SystemTop.bit} [get_hw_devices xc7s15_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 56 seconds
+selectCodeEditor("Color_Rec_RGB.v", 366, 421); // cl (w, cp)
+selectCodeEditor("Color_Rec_RGB.v", 364, 395); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SystemTop.v", 0); // k (j, cp)
+selectCodeEditor("SystemTop.v", 134, 158); // cl (w, cp)
+selectCodeEditor("SystemTop.v", 80, 202); // cl (w, cp)
+selectCodeEditor("SystemTop.v", 143, 315); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("SystemTop.v", 124, 268); // cl (w, cp)
+selectCodeEditor("SystemTop.v", 124, 268, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("SystemTop.v", 240, 299); // cl (w, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Rec.v", 1); // k (j, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,198 MB. GUI used memory: 85 MB. Current time: 7/31/20, 12:14:44 AM CST
+// Elapsed time: 27 seconds
+selectCodeEditor("Color_Rec.v", 463, 269); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 469, 271); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("Color_Rec.v", 197, 268); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 489, 314); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("Color_Rec.v", 271, 445); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 297, 452); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 422, 483); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 404, 457); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 304, 448); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: FILE_SET_CHANGE
+// f (cp): Launch Runs: addNotify
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_OK", "OK"); // JButton (C, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+// TclEventType: RUN_MODIFY
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Jul 31 00:16:25 2020] Launched impl_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SystemTop.v", 0); // k (j, cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("SystemTop.v", 135, 383); // cl (w, cp)
+selectCodeEditor("SystemTop.v", 135, 383, false, false, false, false, true); // cl (w, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Color_Rec.v", 1); // k (j, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 41 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/SystemTop.bit} [get_hw_devices xc7s15_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 48 seconds
+selectCodeEditor("Color_Rec.v", 298, 382); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 395, 416); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 358, 390); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("Color_Rec.v", 294, 249); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 387, 244); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 389, 238); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 292, 240); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("Color_Rec.v", 301, 334); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Jul 31 00:19:17 2020] Launched synth_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/synth_1/runme.log [Fri Jul 31 00:19:17 2020] Launched impl_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+selectCodeEditor("Color_Rec.v", 296, 246); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 256, 194); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 296, 239); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("Color_Rec.v", 398, 285); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 48 seconds
+selectCodeEditor("Color_Rec.v", 445, 326); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 49 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/SystemTop.bit} [get_hw_devices xc7s15_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 64 seconds
+selectCodeEditor("Color_Rec.v", 313, 436); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 359, 428); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 359, 400); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("Color_Rec.v", 200, 372); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 331, 398); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 329, 392); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 317, 377); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 243, 381); // cl (w, cp)
+// Elapsed time: 41 seconds
+selectCodeEditor("Color_Rec.v", 304, 379); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 220, 170); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("Color_Rec.v", 193, 431); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 295, 207); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 286, 208); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 279, 191); // cl (w, cp)
+typeControlKey((HResource) null, "Color_Rec.v", 'v'); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 156, 199); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 164, 220); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 360, 226); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 175, 451); // cl (w, cp)
+// Elapsed time: 71 seconds
+selectCodeEditor("Color_Rec.v", 355, 225); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("Color_Rec.v", 290, 496); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 337, 336); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 188, 362); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 197, 360); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 159, 270); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 160, 82); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 494, 235); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 365, 276); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 364, 268); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 255, 107); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 194, 81); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 394, 231); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("Color_Rec.v", 256, 128); // cl (w, cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Jul 31 00:27:01 2020] Launched synth_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/synth_1/runme.log [Fri Jul 31 00:27:01 2020] Launched impl_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 68 seconds
+selectCodeEditor("Color_Rec.v", 257, 196); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 38 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/SystemTop.bit} [get_hw_devices xc7s15_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 27 seconds
+selectCodeEditor("Color_Rec.v", 226, 134); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 241, 125); // cl (w, cp)
+// Elapsed time: 82 seconds
+selectCodeEditor("Color_Rec.v", 336, 392); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 322, 346); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 349, 303); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 357, 363); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 254, 128); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectCodeEditor("Color_Rec.v", 201, 121); // cl (w, cp)
+// Elapsed time: 78 seconds
+selectCodeEditor("Color_Rec.v", 381, 384); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 423, 227); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 275, 201); // cl (w, cp)
+// Elapsed time: 47 seconds
+selectCodeEditor("Color_Rec.v", 388, 218); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("Color_Rec.v", 226, 421); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 228, 422); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 268, 377); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 221, 231); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 427, 255); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 382, 234); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 396, 224); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 502, 325); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 514, 378); // cl (w, cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Jul 31 00:34:18 2020] Launched synth_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/synth_1/runme.log [Fri Jul 31 00:34:18 2020] Launched impl_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/runme.log 
+// Elapsed time: 19 seconds
+selectCodeEditor("Color_Rec.v", 1, 403); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("Color_Rec.v", 3, 330); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 280, 310); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 95 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/SystemTop.bit} [get_hw_devices xc7s15_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 38 seconds
+selectCodeEditor("Color_Rec.v", 243, 174); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 255, 176); // cl (w, cp)
+// Elapsed time: 36 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// f (cp): Launch Runs: addNotify
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_OK", "OK"); // JButton (C, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+// TclEventType: RUN_MODIFY
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Jul 31 00:37:58 2020] Launched impl_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 25 seconds
+selectCodeEditor("Color_Rec.v", 642, 489); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 22 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/SystemTop.bit} [get_hw_devices xc7s15_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 34 seconds
+selectCodeEditor("Color_Rec.v", 306, 288); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("Color_Rec.v", 439, 405); // cl (w, cp)
+// Elapsed time: 123 seconds
+selectCodeEditor("Color_Rec.v", 251, 519); // cl (w, cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Jul 31 00:41:48 2020] Launched synth_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/synth_1/runme.log [Fri Jul 31 00:41:48 2020] Launched impl_1... Run output will be captured here: C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/runme.log 
+// Elapsed time: 37 seconds
+selectCodeEditor("Color_Rec.v", 191, 128); // cl (w, cp)
+selectCodeEditor("Color_Rec.v", 188, 140); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 90 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/16331/Documents/GitHub_Projects/A05_v1/RGB_LED_v1/RGB_LED_v1.runs/impl_1/SystemTop.bit} [get_hw_devices xc7s15_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7s15_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,198 MB. GUI used memory: 86 MB. Current time: 7/31/20, 12:44:44 AM CST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// n (cp): Close Hardware Target: addNotify
+// Elapsed time: 58 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,198 MB. GUI used memory: 84 MB. Current time: 7/31/20, 1:14:44 AM CST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// WARNING: updateGUI() is taking  39399133 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1493 ms.
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,198 MB. GUI used memory: 84 MB. Current time: 7/31/20, 12:13:16 PM CST
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// n (cp): Close Hardware Target: addNotify
+// Elapsed time: 41330 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,198 MB. GUI used memory: 84 MB. Current time: 7/31/20, 12:43:19 PM CST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  4975014 ms.
+// WARNING: HTimer (WrapperUtils Delayed Delete Timer) is taking 1250ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1250 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,198 MB. GUI used memory: 84 MB. Current time: 7/31/20, 2:27:10 PM CST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 8157 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1041 ms.
+selectButton((HResource) null, "Schematic_settings"); // u (f, cp): TRUE
+selectButton((HResource) null, "Schematic_settings"); // u (f, cp): FALSE
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "Schematic_zoom_fit"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // G (aF, cp)
+// PAPropertyPanels.initPanels (<const0>) elapsed time: 0.4s
+// Elapsed time: 16 seconds
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 632, 395, 1557, 734, false, false, false, true, false); // f (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ac (al, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SchMenuAndMouse_EXPAND_CONE, "Expand Cone"); // ac (al, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceQtoS.SchMenuAndMouse_REMOVE_SELECTED_ITEMS_FROM_SCHEMATIC, "Remove Selected Items from Schematic"); // af (al, Popup.HeavyWeightWindow)
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "Schematic_zoom_fit"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+// Elapsed time: 359 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemTop (SystemTop.v), MIPI_Camera_Driver : OV5647_Init (OV5647_Init.v)]", 8, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemTop (SystemTop.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemTop (SystemTop.v), MIPI_Trans_Driver : Driver_MIPI (Driver_MIPI.v)]", 4, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 0); // k (j, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,198 MB. GUI used memory: 97 MB. Current time: 7/31/20, 2:57:09 PM CST

@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 31 22:20:02 2020
+# Process ID: 8056
+# Current directory: C:/Users/16331/Documents/GitHub_Projects/xilinx-summer-camp-project/project2/project_v2_RGB2HSV
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14060 C:\Users\16331\Documents\GitHub_Projects\xilinx-summer-camp-project\project2\project_v2_RGB2HSV\RGB_LED_v1.xpr
+# Log file: C:/Users/16331/Documents/GitHub_Projects/xilinx-summer-camp-project/project2/project_v2_RGB2HSV/vivado.log
+# Journal file: C:/Users/16331/Documents/GitHub_Projects/xilinx-summer-camp-project/project2/project_v2_RGB2HSV\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/16331/Documents/GitHub_Projects/xilinx-summer-camp-project/project2/project_v2_RGB2HSV/RGB_LED_v1.xpr
+update_compile_order -fileset sources_1
+reset_project
+export_ip_user_files -of_objects  [get_files C:/Users/16331/Documents/GitHub_Projects/xilinx-summer-camp-project/project2/project_v2_RGB2HSV/RGB_LED_v1.srcs/sim_1/new/test_color.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/16331/Documents/GitHub_Projects/xilinx-summer-camp-project/project2/project_v2_RGB2HSV/RGB_LED_v1.srcs/sim_1/new/test_color.v
+file delete -force C:/Users/16331/Documents/GitHub_Projects/xilinx-summer-camp-project/project2/project_v2_RGB2HSV/RGB_LED_v1.srcs/sim_1/new/test_color.v
+reset_simulation
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/16331/Documents/GitHub_Projects/xilinx-summer-camp-project/project2/project_v2_RGB2HSV/RGB_LED_v1.runs/impl_1/SystemTop.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {C:/Users/16331/Documents/GitHub_Projects/xilinx-summer-camp-project/project2/project_v2_RGB2HSV/RGB_LED_v1.runs/impl_1/SystemTop.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]

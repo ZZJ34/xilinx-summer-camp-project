@@ -1,0 +1,7 @@
+verilog xil_defaultlib  \
+"../../../../RGB_LED_v1.srcs/sources_1/ip/Key_0/src/Key.v" \
+"../../../../RGB_LED_v1.srcs/sources_1/ip/Key_0/sim/Key_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
